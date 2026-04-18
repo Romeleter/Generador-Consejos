@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Consejos</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="pagina">
+    <section class="tarjeta" >
+      <p class="tarjeta__etiqueta" id="id-consejo">CONSEJO #...</p>
+      <blockquote class="tarjeta__texto" id="texto-consejo">
+        Cargando consejo...
+      </blockquote>
+      <picture class="tarjeta__divisor">
+        <source media="(max-width: 640px)" srcset="./images/pattern-divider-mobile.svg">
+        <img src="./images/pattern-divider-desktop.svg" alt="" >
+      </picture>
+      <button class="tarjeta__boton" id="boton-consejo" type="button" >
+        <img src="./images/icon-dice.svg" alt="" >
+      </button>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
