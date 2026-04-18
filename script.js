@@ -21,7 +21,7 @@ async function cargarConsejo() {
     const datos = await respuesta.json();
     const { id: numeroConsejo, advice: contenidoConsejo } = datos.slip;
 
-    idConsejo.textContent = `CONSEJO #${numeroConsejo}`;
+    idConsejo.textContent = `ADVICE #${numeroConsejo}`;
     textoConsejo.textContent = contenidoConsejo;
   } catch (error) {
     idConsejo.textContent = "ADVICE #---";
