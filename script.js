@@ -15,7 +15,7 @@ async function cargarConsejo() {
     });
 
     if (!respuesta.ok) {
-      throw new Error("No se pudo obtener el consejo.");
+      throw new Error("Failed to fetch advice.");
     }
 
     const datos = await respuesta.json();
@@ -25,7 +25,7 @@ async function cargarConsejo() {
     textoConsejo.textContent = contenidoConsejo;
   } catch (error) {
     idConsejo.textContent = "ADVICE #---";
-    textoConsejo.textContent = "No fue posible cargar un consejo";
+    textoConsejo.textContent = "Unable to load advice.";
   } finally {
     botonConsejo.disabled = false;
   }
