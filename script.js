@@ -25,7 +25,7 @@ async function cargarConsejo() {
     textoConsejo.textContent = contenidoConsejo;
   } catch (error) {
     idConsejo.textContent = "ADVICE #---";
-    textoConsejo.textContent = "No fue posible cargar un consejo. Intenta de nuevo.";
+    textoConsejo.textContent = "No fue posible cargar un consejo";
   } finally {
     botonConsejo.disabled = false;
   }
